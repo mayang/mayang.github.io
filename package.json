@@ -1,6 +1,6 @@
 {
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.1"
+    "@11ty/eleventy": "^3.0.0"
   },
   "name": "mayang.github.io",
   "description": "",
@@ -38,7 +38,7 @@
     "concat-map": "^0.0.1",
     "constantinople": "^4.0.1",
     "cross-spawn": "^7.0.3",
-    "debug": "^4.3.4",
+    "debug": "^4.3.7",
     "define-data-property": "^1.1.1",
     "dependency-graph": "^0.11.0",
     "dev-ip": "^1.0.1",
@@ -197,7 +197,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx @11ty/eleventy --serve"
+    "start": "npx @11ty/eleventy --serve",
+    "debug": "DEBUG=Eleventy* npx @11ty/eleventy"
   },
   "keywords": [],
   "author": "",
