@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HIRE MAY PLZ (title in base layout)</title>
+    <title>{{ title }}</title>
   </head>
   <body>
     HI I'm the base template?
-    <h1>HIRE MAY PLZ (title in base layout)</h1>
-    <b>hello (test in base layout)?</b>
-  
+    <h1>{{ title }}</h1>
+    <b>{{ test }}</b>
+  {% comment %} {{ content | safe }} {% endcomment %}
   </body>
 </html>
