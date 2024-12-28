@@ -8,7 +8,7 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     permissions:
       contents: write
     concurrency:
@@ -19,7 +19,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: current
+          node-version: "18"
 
       - name: Persist npm cache
         uses: actions/cache@v3
