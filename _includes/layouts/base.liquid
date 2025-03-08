@@ -1,0 +1,22 @@
+---
+title: May be online
+description: hire may plz
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+
+    {%- css %}{% include "./public/css/index.css" %}{% endcss %}
+    {% comment %} {%- css %}/* own css */{% endcss %} {% endcomment %}
+    <style>{% getBundle "css" %}</style>
+
+  </head>
+  <body class="home">
+    <p>HI I AM THE BASE TEMPLATE </p>
+    <main class="content">{{ content }}</main>
+  </body>
+</html>

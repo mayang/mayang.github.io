@@ -4,9 +4,9 @@
   "description": "",
   "main": ".eleventy.js",
   "scripts": {
-    "start": "npm run serve && npm run style",
+    "start": "npx @11ty/eleventy --serve",
     "serve": "npx @11ty/eleventy --serve",
-    "style": "npx tailwindcss -i ./src/tailwind.css -o ./_site/styles.css --watch",
+    "style": "npx @tailwindcss/cli -i ./src/tailwind.css -o ./_site/styles.css --watch",
     "build": "rm -rf _site && ELEVENTY_ENV=production npx @11ty/eleventy && npx tailwindcss -i ./src/tailwind.css -o ./_site/styles.css --minify",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -23,9 +23,10 @@
   "homepage": "https://github.com/mayang/mayang.github.io#readme",
   "type": "module",
   "dependencies": {
-    "@11ty/eleventy": "^3.0.0"
+    "@11ty/eleventy": "^3.0.0",
+    "@11ty/eleventy-navigation": "^0.3.5"
   },
   "devDependencies": {
-    "tailwindcss": "^3.4.17"
+    "tailwindcss": "^4.0.0"
   }
 }
